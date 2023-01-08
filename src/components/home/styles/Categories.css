@@ -1,0 +1,29 @@
+.categories{
+display: flex;
+flex-direction: column;
+list-style: none;
+gap: 5px;
+}
+
+.categories li{
+    border-radius: 5px;
+    border: 1px solid gray;
+    width: 120px;
+    cursor: pointer;
+    padding: 1px 3px;
+    
+}
+
+.categories li:hover{
+    transform: scale(1.02);
+}
+
+@media(max-width: 500px){
+    .container{
+        display: flex;
+        justify-content: center;
+    }
+    .categories{
+        padding: 0;
+    }
+}

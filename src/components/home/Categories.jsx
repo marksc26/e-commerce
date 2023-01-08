@@ -1,7 +1,6 @@
-
 import axios from 'axios'
 import React, { useEffect, useState } from 'react'
-
+import './styles/Categories.css'
 const Categories = ({setCategory}) => {
 
     const [categories, setCategories] = useState([])
@@ -19,8 +18,8 @@ const Categories = ({setCategory}) => {
     },[])
 
   return (
-    <section>
-        <ul>
+    <section className='container'>
+        <ul className='categories'>
             <li onClick={() => handleClickCategory("")}>All Products</li>
             {
                 categories.map(category => <li onClick={() => handleClickCategory(category.id)} key={category.id}>{category.name}</li> )
