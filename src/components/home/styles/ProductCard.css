@@ -1,0 +1,63 @@
+.productCard{
+    border: 1px solid gray;
+    border-radius: 10px;
+    overflow: hidden;
+    width: 100%;
+    padding: 20px 30px;
+    position: relative;
+    cursor: pointer;
+
+}
+
+.productCard hr{
+    width: 200%;
+    position:relative;
+    left: -50px;
+    color: gray;
+
+}
+
+.productCard-header{
+    height: 200px;
+}
+
+.productCard-header img{
+    height: 100%;
+    width: 100%;
+    display: block;
+    object-fit: contain;
+}
+
+.productCard h3{
+    color: gray;
+    font-weight: normal;
+    margin: 0;
+
+}
+
+.productCard span{
+    display: block;
+    margin: 5px 0 0 10px;
+
+}
+
+.productCard button{
+    border: none;
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
+    font-size: 24px;
+    padding: 14px;
+    color: white;
+    background-color: red;
+    border-radius: 500px;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: transform 300ms ease;
+}
+
+.productCard button:hover{
+    transform: scale(1.04);
+}
+

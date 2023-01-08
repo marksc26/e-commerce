@@ -1,0 +1,31 @@
+.cartProduct{
+    padding: 15px;
+    position: relative;
+    border: 1px solid gray;
+    border-radius: 10px;
+    transition: transform 300ms ease;
+}
+
+.cartProduct:hover{
+    transform: scale(1.02);
+}
+
+.cartProduct h4{
+    color:gray;
+    font-size: 14px;
+}
+
+.cartProduct h3{
+    font-size: 18px;
+}
+
+.cartProduct i{
+    cursor: pointer;
+    color: red;
+    position: absolute;
+    
+}
+
+.cartProduct-footer{
+    text-align: end;
+}
