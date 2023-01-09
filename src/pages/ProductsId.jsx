@@ -3,7 +3,7 @@ import React, { useEffect, useState } from 'react'
 import { useParams } from 'react-router-dom'
 import ProductInfo from '../components/productId/ProductInfo'
 import SimilarProducts from '../components/productId/SimilarProducts'
-import './styles/productsId.css'
+import '../pages/styles/ProductsId.css'
 const ProductsId = () => {
 
     const {id} = useParams()

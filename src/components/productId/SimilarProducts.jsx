@@ -1,6 +1,7 @@
 import axios from 'axios'
 import React, { useEffect, useState } from 'react'
 import ProductCard from '../home/ProductCard'
+import './styles/SimilarProducts.css'
 
 const SimilarProducts = ({categories, product}) => {
 
