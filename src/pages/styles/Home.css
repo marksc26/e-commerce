@@ -5,19 +5,23 @@
 
 .home-form{
     width: max-content;
-    margin: 20px auto;
-    border: 1px solid gray;
+    margin: 60px auto 20px;
+    border-radius: 20px;
+    padding: 0 0 0 10px;
+    border: 1px solid #3e1f47;
+  
 }
 
 .home-formDiv input{
     color: gray;
-    padding: 10px 40px 10px 10px;
+    font-size: 15px;
     border: none;
-    font-size: 14px;
+    
 }
 
 .home-formDiv input::placeholder{
     color: gray;
+
 }
 
 .home-form button{
@@ -25,15 +29,17 @@
     padding: 10px;
     border: none;
     color: white;
-    background-color: red;
+    background-color: #3e1f47;
     cursor: pointer;
+    border-radius: 0 20px 20px 0;
+    
 }
 
 .home-containerProducts{
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
-    justify-items: center;
-    grid-template-rows: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     gap: 40px;
-    margin: 0 20px 20px 20px;
+    margin: 30px auto;
+
 }

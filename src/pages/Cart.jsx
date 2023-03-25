@@ -35,7 +35,7 @@ const Cart = () => {
         }
         {
           !cart.length && (
-            <h2>Not Found Products in Cart</h2>
+            <h2>Not Found Products in Cart</h2> 
           )
         }
       </section>

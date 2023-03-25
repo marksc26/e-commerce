@@ -47,7 +47,7 @@ const handleSubmit = (e) =>{
         <form className='home-form' onSubmit={handleSubmit}>
             <div className='home-formDiv'>
                 <input type="text" id='nameProduct' placeholder='What are you looking for?' />
-                <button><i class='bx bx-search'></i></button>
+                <button><i className='bx bx-search'></i></button>
             </div>
         </form>
         <Categories setCategory={setCategory}/>

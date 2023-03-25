@@ -3,7 +3,7 @@
     justify-content: center;
     align-items: center;
     height: calc(100vh - 60.7px);
-    background-color: hsla(0, 1%,72%,.1);
+
 }
 
 .loged,
@@ -13,7 +13,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: white;
+    border: 1px solid #183a37;
     padding: 20px;
     border-radius: 10px;
     font-size: 20px;
@@ -26,11 +26,16 @@
 
 .loged button{
     border: none;
-    background-color: red;
+    background-color: #183a37;
     color: white;
     padding: 10px 15px;
-    border-radius: 5px;
+    border-radius: 10px;
     cursor: pointer;
+}
+
+.buttons{
+    display: flex;
+    gap: 10px;
 }
 
 .container-test{
@@ -39,6 +44,7 @@
     border-radius: 10px;
     text-align: start;
     padding: 0 15px;
+    margin-bottom: 10px;
 
 }
 
@@ -68,8 +74,8 @@
     width: 100%;
     padding: 10px 14px;
     border: none;
-    background-color: red;
-    color: white;
+    background-color: #183a37;
+    color: #efd6ac;
     cursor: pointer;
     
 }

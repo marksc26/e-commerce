@@ -1,32 +1,69 @@
+.imgCard{
+    width: 350px;
+}
+
+
 .productInfo{
     font-size: 10px;
     padding: 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 20px 60px;
+    margin: 50px auto;
+    max-width: 1200px;
+
 }
+
+
 
 .productInfo-footer{
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     gap: 10px;
 }
 
 .container-price{
-    flex: 1 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
+
+.container-price h3{
+    font-size: 20px;
+    margin: 5px;
+}
+
 
 .productInfo-title{
     color: gray;
     font-weight: normal;
+    font-size: 25px;
+    padding: 20px 10px;
+    margin-bottom: 0;
 }
+
+.productInfo-description{
+    font-size: 18px;
+    text-align: left;
+    padding: 20px 10px;
+    margin-top: 0;
+}
+
 
 .container-price span{
-    font-weight: bold;
-    margin-left: 10px;
-
+    font-size: 22px;
+    color: #183a37;
+    margin-bottom: 18px;
 }
 
-.container-quantity{
-    flex: 1 1;
 
+.productInfo-footer{
+
+    object-fit: cover;
+    display: block;
 }
 
 .productInfo-footer button{
@@ -35,20 +72,35 @@
 
 .container-counter{
     display: flex;
-    margin-left: 10px;
+    align-items: center;
+    margin-bottom: 20px;
+    
 }
 
 .container-counter h4{
-    padding: 10px;
-    border: 1px solid gray;
+    margin: 0 10px;
+    font-size: 18px;
 }
+
+.plus i{
+    font-size: 30px;
+    color: #183a37;
+    cursor: pointer;
+}
+
+.minus i{
+    font-size: 30px;
+    color: #183a37;
+    cursor: pointer;
+}
+
 
 .productInfo-footer button{
     width: 100%;
     padding: 10px;
     border: none;
     color: white;
-    background-color: red;
+    background-color: #04151f;
     border-radius: 5px;
     font-size: 16px;
     cursor: pointer;
@@ -56,12 +108,34 @@
 
   
 
-
-
-
-.container-counter div{
-    cursor: pointer;
-    padding: 10px 15px;
-    border: 1px solid gray;
-    
+@media(max-width: 1000px){
+    .productInfo-description{
+        font-size: 14px;
+    }
+    .productInfo{
+        padding: 10px;
+    }
 }
+
+@media(max-width: 850px){
+    .productInfo-description{
+        font-size: 12px;
+    }
+    .productInfo{
+        grid-template-columns: 1fr;
+        margin-top: 0px;
+        padding: 15px;
+    }
+    .productInfo-footer{
+        text-align: center;
+    }
+
+    .productInfo-footer p{
+        text-align: center;
+    }
+}
+
+
+
+
+

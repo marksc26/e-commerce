@@ -16,7 +16,9 @@ export default productsSlice.reducer
 export const getAllProducts = () => (dispatch) =>{
     const URL ="https://e-commerce-api.academlo.tech/api/v1/products"
     axios.get(URL)
-    .then(res => dispatch(setProductsGlobal(res.data.data.products)))
+    .then(res =>{
+        dispatch(setProductsGlobal(res.data.data.products))
+    } )
     .catch(err => console.log(err))
 
 }

@@ -7,7 +7,7 @@
 }
 
 .cartProduct:hover{
-    transform: scale(1.02);
+    transform: translateY(-5px)
 }
 
 .cartProduct h4{
@@ -22,7 +22,10 @@
 .cartProduct i{
     cursor: pointer;
     color: red;
-    position: absolute;
+    padding: 7px;
+    border-radius: 20px;
+    background-color: #1f2041;
+    font-size: 20px;
     
 }
 

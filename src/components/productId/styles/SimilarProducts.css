@@ -1,8 +1,14 @@
 .similarProducts{
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
-    justify-items: center;
-    grid-template-rows: auto;
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
     gap: 40px;
-    margin: 0 20px 20px 20px;
+    margin: 50px auto;
+    max-width: 1200px;
+}
+
+@media(max-width: 620px){
+    .similarProducts{
+        margin:0 40px;
+    }
 }

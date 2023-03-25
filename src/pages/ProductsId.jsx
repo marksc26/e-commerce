@@ -32,8 +32,9 @@ const ProductsId = () => {
 
   return (
     <main className='productId'>
-        <ProductInfo product={product}/>
-        <SimilarProducts categories={categories} products={product}/>
+        <ProductInfo product={product} />
+        <h2 className='title'>You may also like</h2>
+        <SimilarProducts categories={categories} product={product}/>
         
     </main>
   )

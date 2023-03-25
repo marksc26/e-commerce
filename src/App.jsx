@@ -1,6 +1,7 @@
 import { Route, Routes } from 'react-router-dom'
 import './App.css'
 import ProtectedRoutes from './components/app/ProtectedRoutes'
+import Footer from './layout/Footer'
 import Header from './layout/Header'
 import Cart from './pages/Cart'
 import Home from './pages/Home'
@@ -28,6 +29,8 @@ function App() {
         </Route>
        
       </Routes>
+
+      <Footer/>
       
     </div>
   )

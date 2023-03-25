@@ -7,6 +7,7 @@ const SimilarProducts = ({categories, product}) => {
 
   const [productsByCategory, setProductsByCategory] = useState([])
 
+
     useEffect(() =>{
 
       if(categories && product){
@@ -24,7 +25,7 @@ const SimilarProducts = ({categories, product}) => {
   return (
     <section className='similarProducts'>
       {
-        productsByCategory.map(productByCategory => <ProductCard product={productByCategory} key={productByCategory.id}/>)
+        productsByCategory.map(productByCategory => <ProductCard  product={productByCategory} key={productByCategory.id}/>)
       }
     </section>
   )

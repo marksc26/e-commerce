@@ -1,6 +1,7 @@
 import React from 'react'
 import { useForm } from 'react-hook-form'
 import { useDispatch, useSelector } from 'react-redux'
+import { useNavigate } from 'react-router-dom'
 import { loginUserThunk, logOutThunk } from '../store/slices/userInfo.slice'
 import './styles/Login.css'
 const Login = () => {
@@ -12,6 +13,8 @@ const Login = () => {
 
   const dispatch = useDispatch()
 
+  const navigate = useNavigate()
+
   const submit = (data) =>{
 
     dispatch(loginUserThunk(data))
@@ -21,6 +24,11 @@ const Login = () => {
     dispatch(logOutThunk())
   }
 
+  const handleClickHome = () => {
+    navigate('/')
+  }
+
+
 
   return (
     <main className='login'>
@@ -29,7 +37,12 @@ const Login = () => {
           <section className='loged'>
             <i className='bx bx-user-circle'></i>
             <h3>{`${user.firstName} ${user.lastName}`}</h3>
-            <button onClick={handleClickLogOut}>Logout</button>
+            <div className='buttons'>              
+              <button onClick={handleClickHome}>Home</button>  
+              <button onClick={handleClickLogOut}>Logout</button>
+            
+            </div>
+
           </section>
         ) : (
         <form className='login-form' onSubmit={handleSubmit(submit)}>

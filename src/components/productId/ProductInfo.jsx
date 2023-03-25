@@ -29,26 +29,35 @@ const ProductInfo = ({product}) => {
         dispatch(addProductCart(data))
     }
 
+
+
     
   return (
     <article className='productInfo'>
-        <h2 className='productInfo-title'>{product?.title}</h2>
-        <p className='productInfo-description'>{product?.description}</p>
-        <footer className='productInfo-footer'>
+        <div className='productInfo-Img'>
+        <img className='productImg' src={product?.productImgs[0]} alt="" />
+        </div>
+        
+        <section className='productInfo-footer'>
+            <div>
+            <h2 className='productInfo-title'>{product?.title}</h2>
+            <p className='productInfo-description'>{product?.description}</p>
+            </div>
             <div className='container-price' >
                 <h3>Price</h3>
-                <span>{product?.price}</span>
-            </div>
-            <div className='container-quantity'>
-                <h3>Quantity</h3>
+                <span>$ {product?.price}</span>    <h3>Quantity</h3>
                 <div className='container-counter'>
-                    <div onClick={handleMinus}>-</div>
+                    <div className='plus' onClick={handleMinus}><i className='bx bxs-minus-circle'></i></div>
                     <h4>{quantity}</h4>
-                    <div onClick={handlePlus}>+</div>
+                    <div className='minus' onClick={handlePlus}><i className='bx bxs-plus-circle'></i></div>
+                </div>
+                <div>
+               <button onClick={handleAddProduct}>Add to Cart</button> 
                 </div>
             </div>
-            <button onClick={handleAddProduct}>Add to Cart</button>
-        </footer>
+            
+            
+        </section>
 
     </article>
   )

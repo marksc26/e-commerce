@@ -5,5 +5,5 @@ export const changeDateFormat = (oldFormat) =>{
         month: "long",
         day: "2-digit"
     }
-    return newDate.toLocaleDateString("es-Es", options)
+    return newDate.toLocaleDateString("en-En", options)
 }
