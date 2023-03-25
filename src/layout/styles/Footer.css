@@ -1,3 +1,4 @@
+
 .footer{
     background-color: #183a37;
     padding: 30px 0;
@@ -5,7 +6,12 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    margin-top: 80px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+
+
+
 }
 .footer p{
     color: #efd6ac;

@@ -7,7 +7,6 @@ const Footer = () => {
     <footer className='footer'>
         <p>Developed by:</p>
         <img src={devLogo} alt="" />
-
     </footer>
   )
 }
